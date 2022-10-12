@@ -21,7 +21,7 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                     .lineLimit(1)
                 Button {
-                    //
+                    print("Action on click button")
                 } label: {
                     Text("Allow Access")
                         .fontWeight(.medium)
