@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2724F55B28F7D21100EAB377 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2724F55A28F7D21100EAB377 /* Lottie */; };
+		2724F55D28F7D3CE00EAB377 /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = 2724F55C28F7D3CE00EAB377 /* duck.json */; };
+		2724F55F28F7D46700EAB377 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2724F55E28F7D46700EAB377 /* LottieView.swift */; };
 		48B086FD28F6B9050006C41B /* PhotoEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */; };
 		48B086FF28F6B9050006C41B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B086FE28F6B9050006C41B /* ContentView.swift */; };
 		48B0870128F6B9060006C41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B0870028F6B9060006C41B /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2724F55C28F7D3CE00EAB377 /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		2724F55E28F7D46700EAB377 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		48B086F928F6B9050006C41B /* PhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorApp.swift; sourceTree = "<group>"; };
 		48B086FE28F6B9050006C41B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2724F55B28F7D21100EAB377 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +59,9 @@
 			children = (
 				48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */,
 				48B086FE28F6B9050006C41B /* ContentView.swift */,
+				2724F55E28F7D46700EAB377 /* LottieView.swift */,
 				48B0870028F6B9060006C41B /* Assets.xcassets */,
+				2724F55C28F7D3CE00EAB377 /* duck.json */,
 				48B0870228F6B9060006C41B /* Preview Content */,
 			);
 			path = PhotoEditor;
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = PhotoEditor;
+			packageProductDependencies = (
+				2724F55A28F7D21100EAB377 /* Lottie */,
+			);
 			productName = PhotoEditor;
 			productReference = 48B086F928F6B9050006C41B /* PhotoEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 48B086F028F6B9050006C41B;
+			packageReferences = (
+				2724F55928F7D21100EAB377 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 48B086FA28F6B9050006C41B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B0870428F6B9060006C41B /* Preview Assets.xcassets in Resources */,
+				2724F55D28F7D3CE00EAB377 /* duck.json in Resources */,
 				48B0870128F6B9060006C41B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			files = (
 				48B086FF28F6B9050006C41B /* ContentView.swift in Sources */,
 				48B086FD28F6B9050006C41B /* PhotoEditorApp.swift in Sources */,
+				2724F55F28F7D46700EAB377 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +282,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoEditor/Preview Content\"";
 				DEVELOPMENT_TEAM = JJ624BWUC6;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoEditor/Preview Content\"";
 				DEVELOPMENT_TEAM = JJ624BWUC6;
 				ENABLE_PREVIEWS = YES;
@@ -339,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2724F55928F7D21100EAB377 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2724F55A28F7D21100EAB377 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2724F55928F7D21100EAB377 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48B086F128F6B9050006C41B /* Project object */;
 }

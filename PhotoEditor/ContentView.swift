@@ -1,19 +1,13 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Oleg Kolbasa on 12.10.2022.
-//
-
 import SwiftUI
+import Lottie
 
 struct ContentView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
             VStack {
-                Image(systemName: "duck")
-                    .animation(.easeInOut)
+                LottieView(name: "duck", loopMode: .loop)
+                    .frame(width: 144, height: 144)
                 Text("Access Your Photos and Videos")
                     .font(.title3)
                     .fontWeight(.semibold)
