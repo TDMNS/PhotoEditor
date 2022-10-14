@@ -8,23 +8,26 @@ struct ContentView: View {
             VStack {
                 LottieView(name: "duck", loopMode: .loop)
                     .frame(width: 144, height: 144)
+                    .padding(.bottom, 20)
                 Text("Access Your Photos and Videos")
-                    .font(.title3)
+                    .font(.system(size: 20))
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .lineLimit(1)
+                    .padding(.bottom, 28)
                 Button {
                     print("Action on click button")
                 } label: {
                     Text("Allow Access")
-                        .fontWeight(.medium)
+                        .font(.system(size: 17))
+                        .fontWeight(.semibold)
                         .frame(height: 50)
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .foregroundColor(.white)
                         .background(.blue)
                         .cornerRadius(10)
-                        .padding()
+                        .padding([.leading, .trailing], 16)
                 }
             }
         }
