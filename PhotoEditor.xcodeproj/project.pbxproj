@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		48B086FD28F6B9050006C41B /* PhotoEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */; };
-		48B086FF28F6B9050006C41B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B086FE28F6B9050006C41B /* ContentView.swift */; };
+		48B086FF28F6B9050006C41B /* AllowAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B086FE28F6B9050006C41B /* AllowAccess.swift */; };
 		48B0870128F6B9060006C41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B0870028F6B9060006C41B /* Assets.xcassets */; };
 		48B0870428F6B9060006C41B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B0870328F6B9060006C41B /* Preview Assets.xcassets */; };
+		48C644DD28FA6911009F9A39 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C644DC28FA6911009F9A39 /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48B086F928F6B9050006C41B /* PhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorApp.swift; sourceTree = "<group>"; };
-		48B086FE28F6B9050006C41B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48B086FE28F6B9050006C41B /* AllowAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowAccess.swift; sourceTree = "<group>"; };
 		48B0870028F6B9060006C41B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B0870328F6B9060006C41B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48C644DC28FA6911009F9A39 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				48B086FC28F6B9050006C41B /* PhotoEditorApp.swift */,
-				48B086FE28F6B9050006C41B /* ContentView.swift */,
+				48B086FE28F6B9050006C41B /* AllowAccess.swift */,
+				48C644DC28FA6911009F9A39 /* GalleryView.swift */,
 				48B0870028F6B9060006C41B /* Assets.xcassets */,
 				48B0870228F6B9060006C41B /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B086FF28F6B9050006C41B /* ContentView.swift in Sources */,
+				48B086FF28F6B9050006C41B /* AllowAccess.swift in Sources */,
+				48C644DD28FA6911009F9A39 /* GalleryView.swift in Sources */,
 				48B086FD28F6B9050006C41B /* PhotoEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +274,7 @@
 				DEVELOPMENT_TEAM = JJ624BWUC6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use this application, you need to grant access to the gallery.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +304,7 @@
 				DEVELOPMENT_TEAM = JJ624BWUC6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use this application, you need to grant access to the gallery.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
