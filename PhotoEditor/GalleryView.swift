@@ -17,7 +17,7 @@ struct GalleryView: View {
             Color.black.ignoresSafeArea()
             ScrollView(.horizontal, showsIndicators: false) {
                 VStack {
-                    HStack {
+                    HStack(spacing: 1) {
                         ForEach(photos.allPhotos, id: \.self) { photo in
                             Image(uiImage: photo)
                                 .resizable()
