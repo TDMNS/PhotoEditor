@@ -53,9 +53,11 @@ class PhotosModel: ObservableObject {
                 self.errorString = ""
                 self.getAllPhotos()
             case .denied, .restricted:
-                self.errorString = "Photo access permission denied"
+                self.errorString = "Photo access permission. Denied!"
             case .notDetermined:
-                self.errorString = "Photo access permission not determined"
+                self.errorString = "Photo access permission. Not determined!"
+            case .limited:
+                self.errorString = "Photo access permission. App want that all photos was accessed!"
             @unknown default:
                 fatalError()
             }
@@ -80,7 +82,7 @@ class PhotosModel: ObservableObject {
                     if let image = image {
                         self.allPhotos.append(image)
                     } else {
-                        print("error asset to image")
+                        print("Error asset to image")
                     }
                 }
             }
