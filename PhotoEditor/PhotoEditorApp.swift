@@ -4,7 +4,7 @@ import SwiftUI
 struct PhotoEditorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllowAccess()
         }
     }
 }

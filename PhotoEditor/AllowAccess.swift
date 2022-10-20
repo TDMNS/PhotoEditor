@@ -2,7 +2,7 @@ import SwiftUI
 import Lottie
 
 @available(iOS 13.0, *)
-struct ContentView: View {
+struct AllowAccess: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -25,7 +25,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AllowAccess()
     }
 }
 
